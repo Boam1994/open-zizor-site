@@ -27,6 +27,11 @@ body{
     background-image: url(../images/fond_jaune.png);
 
 }
+#article h1,footer h1, nav a{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+} 
 #block-page{
     padding-left: 50px;
     padding-right: 50px;
@@ -35,14 +40,64 @@ body{
 .main-header{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    
+}
+header h1{
+    font-family: 'BallparkWeiner', serif;
 }
 .main-nav{
     display: flex;
-    flex-grow: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+nav a:hover{
+    color: red;
+    border-bottom: solid red;
+}
+/* mise en page de la bannière*/
+.banniere{
+    position: relative;
+    
+}
+.san-francisco{
+    width: 100%;
+}
+.retour{
+    position: absolute;
+    bottom: 8px;
+    left: 18px;
+    color: white;
+    
+}
+.lien-article{
+    position: absolute;
+    bottom: 8px;
+    right: 18px;
+    padding: 3px 1px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(173, 2, 37);
 }
 /* mise en page de la section article*/
 #article{
     display: flex;
-    flex-grow: 2;
+    flex-direction: row;
+}
+/* mise en page du footer*/
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#mes-amis li{
+     list-style-type: none;
+}#mes-amis a{
+    text-decoration: none;
 }
