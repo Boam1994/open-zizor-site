@@ -40,6 +40,7 @@ body{
 .main-header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     
 }
 header h1{
@@ -62,20 +63,37 @@ nav a:hover{
 }
 /* mise en page de la bannière*/
 .banniere{
+    background: url('../images/sanfrancisco.jpg')no-repeat;
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
     position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+
+
     
 }
-.san-francisco{
-    width: 100%;
+.banniere-description{
+    position: absolute;
+    bottom: 0px;
+    left: 1px;
+    width: 98%;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    padding: 10px ; 
+    
 }
-.retour{
+
+/*.retour{
     position: absolute;
     bottom: 8px;
     left: 18px;
     color: white;
+    font-size: 0.8em;
     
-}
-.lien-article{
+}*/
+.bnt-rouge{
     position: absolute;
     bottom: 8px;
     right: 18px;
